@@ -1,20 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native'
+import Animation2 from './src/components/Animation2'
+import FreeFall from './src/components/FreeFall'
+import RenderAnimation from './src/components/RenderAnimation'
+import GestureAnimation from './src/components/GestureAnimation'
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{flex: 1, paddingTop: 20}}>
+      <GestureAnimation />
     </View>
-  );
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
